@@ -21,21 +21,27 @@
 @include mat.all-component-typographies();
 @include mat.core();
 
+$tb-primary-color: #4f497a; // New primary color
+$tb-secondary-color: #665f8a; // Analogous color
+$tb-hue3-color: #7d76a0; // Another analogous color
+
+$tb-dark-primary-color: #3f3b62; // Darker shade of primary color
+
 $tb-mat-indigo: (
-  50: #e8eaf6,
-  100: #c5cae9,
-  200: #9fa8da,
-  300: #7986cb,
-  400: #5c6bc0,
+  50: #e4e2f0, // Light tint of primary
+  100: #bcb8d6, // Tint of secondary
+  200: #9e9abf, // Tint of hue3
+  300: #7f7ca7, // Mid-tone
+  400: #67638f, // Darker mid-tone
   500: $tb-primary-color,
   600: $tb-secondary-color,
-  700: #303f9f,
-  800: #283593,
-  900: #1a237e,
+  700: #3f3b62, // Darker shade
+  800: #343154, // Even darker shade
+  900: #27253f, // Near black
   A100: $tb-hue3-color,
-  A200: #536dfe,
-  A400: #3d5afe,
-  A700: #304ffe,
+  A200: #6d6692, // Slightly darker than hue3
+  A400: #59517d, // Darker accent
+  A700: #46425e, // Darkest accent
   contrast: (
     50: rgba(black, 0.87),
     100: rgba(black, 0.87),
