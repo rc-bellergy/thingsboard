@@ -30,8 +30,16 @@
 
     mvn clean install -DskipTests -Ddockerfile.skip=false
 
+## Upload to Docker Hub
+
+    docker tag thingsboard/tb-postgres:latest bellergy/tb-postgres:latest
+    docker push bellergy/tb-postgres:latest 
+
 ## Load new docker image
 
-  1. Check the docker-compose.yml. The image version should use 'latest'. (image: thingsboard/tb-edge:latest)
+  1. Check the docker-compose.yml. The image should use bellergy/tb-postgres:latest
   2. docker-compose up --build -d
+  3. docker compose logs -f mytb
+
+
 
