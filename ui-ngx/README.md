@@ -1,4 +1,4 @@
-# Notes:
+# Notes: How to start the development server.
 
 ## GitHub
     https://github.com/rc-bellergy/thingsboard.git
@@ -9,7 +9,7 @@
  - update the server address in the proxy.conf.js file
 
 ## Install
-    yarn
+    yarn install
 
 - nodeVersion: v20.11.1
 - yarnVersion: v1.22.17
