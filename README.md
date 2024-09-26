@@ -16,6 +16,7 @@
 
 ## Start
 
+    cd ui-ngx
     npm run start
 
 ## Custom theme style
@@ -38,8 +39,9 @@
 ## Load new docker image
 
   1. Check the docker-compose.yml. The image should use bellergy/tb-postgres:latest
-  2. docker compose up --build -d
-  3. docker compose logs -f mytb
+  2. docker compose pull
+  3. docker compose up --build -d
+  4. docker compose logs -f mytb
 
 
 
